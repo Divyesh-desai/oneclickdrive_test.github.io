@@ -1,0 +1,223 @@
+.drive_card { 
+    border-radius: 5px;
+    transition: .2s;
+    box-shadow: 0 0 4px #c7c7c7;
+    outline: 1px solid #dddddd9c;
+    outline-offset: 0;
+    margin-top: 20px;
+}
+
+.drive_card:hover {  outline: 1px solid #ed8413; }
+
+.driver_img { 
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.card_details_full {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.drive_card_details { 
+    padding: 25px 20px;
+    position: relative;
+    width: 100%;
+}
+
+.drive_card_title {
+    font-family: open sans,Tahoma,Arial,helvetica,sans-serif !important;
+    font-weight: 500;
+    font-size: 18px;
+    color: #4d4d4d;
+    letter-spacing: .4px;
+}
+
+.card_icon_full {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    padding-top: 8px;
+}
+
+.card_icon_svg {
+    box-shadow: 0 0 3px #c7c7c7;
+    outline: 1px solid #dddddd9c;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 40px;
+    height: 27px;
+}
+
+.icon_svg { height: 18px; }
+
+.border_line {
+    border-bottom: 1px solid #dddddd9c;
+    margin: 20px 0;
+}
+
+.vertical_border {
+    border-left: 1px solid #dddddd9c;
+    padding: 0 30px;
+    margin: 30px 0 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.awesome_drive_img { width: 150px; }
+
+.img_list {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.img_list ul { list-style: none; margin: 0; padding: 0; }
+
+.img_list ul li::before {
+    content: '';
+    background-image: url('../images/right-tick.svg');
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 10px;
+    width: 22px;
+}
+
+.button_list {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 20px;
+}
+
+.button_img { height: 25px; }
+
+.button_list a {
+    width: 125px;
+    height: 45px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_list a:nth-child(1) { background-color: #ed8413; border-top-left-radius: 50px; border-bottom-left-radius: 50px; }
+.button_list a:nth-child(2) { background-color: #50ca5e; }
+.button_list a:nth-child(3) { background-color: #4d4d4d; border-top-right-radius: 50px; border-bottom-right-radius: 50px; }
+
+.road_img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.vertical_border .road_trip:nth-child(2) { margin-top: 40px; }
+
+.AED {
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.safe_drive_icons {
+    width: 70%;
+}
+
+.drive_details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width:1400px) {
+    .vertical_border { right: 65px; }
+}
+
+@media (min-width:1200px) and (max-width:1399.5px) {
+    .drive_card_details { padding: 13px 20px 0px 6px; }
+    .border_line { margin: 13px 0 5px; }
+    .vertical_border .road_trip:nth-child(2) { margin-top: 25px; }
+    .vertical_border { right: 50px; }
+    .button_list { margin-left: 7px; margin-top: 20px; }
+}
+
+@media (min-width:992px) and (max-width:1199.5px) {
+    .drive_card_details { padding: 13px 20px 0px 6px; }
+    .border_line { margin: 10px 0 2px; }
+    .vertical_border .road_trip:nth-child(2) { margin-top: 30px; }
+    .AED { font-weight: 400; font-size: 20px; margin: 0; }
+    .awesome_drive_img { width: 100px; }
+    .drive_card_title { margin: 0; }
+    .button_list { margin-top: 5px; margin-left: 7px; }
+    .img_list { width: 72%; }
+    .safe_drive_icons { width: 72%; }
+}
+
+@media (min-width:768px) and (max-width:991.5px) {
+    .drive_card_details { padding: 6px 10px 0px 0px }
+    .border_line { margin: 10px 0 2px; }
+    .vertical_border { border-left: 1px solid #dddddd9c; padding: 6px 15px 0; margin: 15px 0; }
+    .vertical_border .road_trip:nth-child(2) { margin-top: 10px; }
+    .AED { font-weight: 400; font-size: 20px; margin: 0; }
+    .awesome_drive_img_div { width: 80px; top: 10px; right: 10px; }
+    .awesome_drive_img { width: 100%; }
+    .drive_card_title { margin: 0; }
+    .button_list { margin-top: 2px; margin-left: 0; }
+    .button_list a { width: 97px; height: 30px; }
+    .button_img { height: 18px; }
+    .img_list ul li { font-size: 11px; }
+    .img_list { position: relative; width: 68.5%; }
+    .safe_drive_icons { width: 68.5%; }
+}
+
+@media (min-width:576px) and (max-width:767.5px) {
+    .drive_card_details { padding: 6px 10px 0px 0px }
+    .border_line { margin: 10px 0 2px; }
+    .vertical_border { border-left: 1px solid #dddddd9c; padding: 0 15px 0; margin: 18px 0; }
+    .vertical_border .road_trip:nth-child(2) { margin-top: 10px; }
+    .AED { font-weight: 400; font-size: 20px; margin: 0; }
+    .awesome_drive_img_div { width: 80px; }
+    .awesome_drive_img { width: 100%; }
+    .drive_card_title { margin: 0; }
+    .button_list { margin-top: 3px; margin-left: 0; margin-bottom: 10px; justify-content: center; }
+    .button_list a { width: 97px; height: 30px; }
+    .button_img { height: 18px; }
+    .img_list ul li { font-size: 14px; }
+    .img_list { position: relative; width: 72%; }
+    .safe_drive_icons { width: 72%; }
+    .driver_img { border-bottom-left-radius: 0; border-top-left-radius: 5px; border-top-right-radius: 5px; }
+}
+
+@media (min-width:0) and (max-width:575.5px) {
+    .drive_card_details { padding: 20px 0 0 0; width: 100%; }
+    .card_icon_full { padding-top: 12px; }
+    .border_line { margin: 25px 0 2px; }
+    .vertical_border { border-left: 0 solid #dddddd9c; border-top: 0 solid #dddddd9c; padding: 0; margin: 5px 0; position: relative; }
+    .vertical_border .road_trip:nth-child(2) { margin-top: 0; }
+    .AED { font-weight: 600; font-size: 20px; margin: 0; }
+    .road_img { height: 13px; padding-bottom: 2px; margin-right: 0px; }
+    .road_trip span { font-size: 12px; }
+    .awesome_drive_img_div { width: 80px; position: absolute; top: -168px; right: 0; }
+    .awesome_drive_img { width: 100%; }
+    .drive_card_title { margin: 0; }
+    .button_list { margin-top: 10px; margin-left: 0; justify-content: center; gap: 1.5px; }
+    .button_list a { width: -webkit-fill-available; height: 40px; }
+    .button_list a:nth-child(1) { background-color: #e89240; border-top-left-radius: 0; border-bottom-left-radius: 15px; }
+    .button_list a:nth-child(2) { background-color: #74c96e; }
+    .button_list a:nth-child(3) { background-color: #575759; border-top-right-radius: 0; border-bottom-right-radius: 15px; }
+    .driver_img { border-bottom-left-radius: 0; border-top-left-radius: 15px; border-top-right-radius: 15px; }
+    .drive_card { border-radius: 15px; } 
+    .button_img { height: 25px; }
+    .img_list ul li { font-size: 14px; }
+    .img_list { position: relative; width: 100%; margin: 15px 0 15px; }
+    .card_details_full { flex-wrap: wrap; flex-direction: column; padding: 0 18px; }
+    .road_trip_full { display: flex; flex-wrap: nowrap; margin-top: 10px; justify-content: space-between; } 
+    .mob_pad { padding: 0; }
+    .safe_drive_icons { width: 100%; }
+    .drive_details { flex-direction: column-reverse; }
+}
