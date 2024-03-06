@@ -1,3 +1,7 @@
+.scroll_snap_full {
+    scroll-snap-type: y mandatory;
+}
+
 .drive_card { 
     border-radius: 5px;
     transition: .2s;
@@ -5,6 +9,7 @@
     outline: 1px solid #dddddd9c;
     outline-offset: 0;
     margin-top: 20px;
+    scroll-snap-align: top;
 }
 
 .drive_card:hover {  outline: 1px solid #ed8413; }
